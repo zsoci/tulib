@@ -50,7 +50,7 @@
 
 -record(cset,
         { m=throw('#cset.m')              :: mode()
-        , xs=dict:new()                   :: dict()
+        , xs=dict:new()                   :: dicts:dict()
         }).
 
 -opaque cset()                            :: #cset{}.

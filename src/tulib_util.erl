@@ -173,7 +173,7 @@ size_test() ->
 -spec timestamp() -> non_neg_integer().
 %% @doc Return the number of microseconds passed since the Unix epoch.
 timestamp()       -> timestamp(now).
-timestamp(now)    -> now_to_microsecs(now());
+timestamp(now)    -> now_to_microsecs(timestamp());
 timestamp(os)     -> now_to_microsecs(os:timestamp()).
 
 now_to_microsecs({MegaSecs, Secs, MicroSecs}) ->

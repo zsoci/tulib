@@ -248,7 +248,7 @@ rmdir(Dir) ->
 -spec touch(string()) -> string().
 %% @doc Update File's ctime. Return File.
 touch(File) ->
-  ok = file:change_time(File, calendar:now_to_datetime(now())),
+  ok = file:change_time(File, calendar:now_to_datetime(erlang:timestamp())),
   File.
 
 -ifdef(NOJENKINS).

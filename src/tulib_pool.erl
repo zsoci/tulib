@@ -119,7 +119,7 @@ behaviour_info(_) -> undefined.
            , size           = ?size           :: integer()
            , max_queue_size = ?max_queue_size :: integer()
              %% internal
-           , free           = queue:new()     :: queue()   %workers
+           , free           = queue:new()     :: queue:queue()   %workers
            , busy           = []              :: list()    %workers
            , workers        = []              :: list()    %all
            , n              = 1                            %counter

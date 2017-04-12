@@ -55,7 +55,8 @@
         , step/1
         ]).
 
--export_type([ dlog/0
+-export_type([ dlog/0,
+               iterator/0
              ]).
 
 %%%_* Includes =========================================================
